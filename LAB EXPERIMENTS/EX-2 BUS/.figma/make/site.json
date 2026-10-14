@@ -1,0 +1,10 @@
+{
+  "description": "Book and manage bus travel with real-time seat selection, live tracking, and secure payments for a seamless desktop booking experience.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
