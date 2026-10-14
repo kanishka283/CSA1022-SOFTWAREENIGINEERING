@@ -1,0 +1,10 @@
+{
+  "description": "A mobile e-commerce app offering seamless shopping with product browsing, secure checkout, order tracking, and dual UI designs for stakeholder feedback.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
