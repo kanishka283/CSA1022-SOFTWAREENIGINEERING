@@ -1,0 +1,9 @@
+git clone https://github.com/<your-username>/<repo>.git
+cd <repo>
+git remote add upstream https://github.com/<original-owner>/<repo>.git
+git checkout -b feature-update
+# edit files
+git add .
+git commit -m "Add feature update"
+git push origin feature-update
+# open Pull Request on GitHub
