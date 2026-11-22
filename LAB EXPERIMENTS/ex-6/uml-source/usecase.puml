@@ -1,0 +1,19 @@
+@startuml
+left to right direction
+actor Customer
+actor Restaurant
+actor "Delivery Agent" as DA
+actor Admin
+rectangle "Online Food Delivery System" {
+  Customer --> (Register / Login)
+  Customer --> (Browse Menu)
+  Customer --> (Place Order)
+  Customer --> (Make Payment)
+  Customer --> (Track Order)
+  Restaurant --> (Manage Menu)
+  Restaurant --> (Accept / Reject Order)
+  DA --> (Pick Up & Deliver Order)
+  Admin --> (Manage Users & Restaurants)
+  (Place Order) ..> (Make Payment) : <<include>>
+}
+@enduml

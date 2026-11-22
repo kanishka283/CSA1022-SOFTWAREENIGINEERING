@@ -1,0 +1,16 @@
+@startuml
+class Customer { +id; +name; +address; +placeOrder(); +trackOrder() }
+class Restaurant { +id; +name; +menu; +acceptOrder() }
+class MenuItem { +id; +name; +price }
+class Order { +id; +status; +total; +calculateTotal() }
+class OrderItem { +quantity }
+class Payment { +id; +mode; +amount; +process() }
+class DeliveryAgent { +id; +name; +updateStatus() }
+Customer "1" -- "*" Order
+Restaurant "1" -- "*" MenuItem
+Order "1" *-- "*" OrderItem
+OrderItem "*" -- "1" MenuItem
+Order "1" -- "1" Payment
+Order "*" -- "1" DeliveryAgent
+Order "*" -- "1" Restaurant
+@enduml
