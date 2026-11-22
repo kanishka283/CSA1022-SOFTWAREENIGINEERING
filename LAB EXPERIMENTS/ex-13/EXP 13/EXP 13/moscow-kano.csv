@@ -1,0 +1,8 @@
+Key,Requirement,MoSCoW,Kano
+OL-1,User login,Must,Basic
+OL-2,Course catalogue,Must,Basic
+OL-3,Video lectures,Must,Performance
+OL-4,Quizzes and grading,Should,Performance
+OL-5,Discussion forum,Could,Delighter
+OL-6,Gamified badges,Could,Delighter
+OL-7,VR classroom,Won't,Delighter
