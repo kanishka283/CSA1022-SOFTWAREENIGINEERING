@@ -1,0 +1,21 @@
+pipeline {
+  agent any
+  environment { IMAGE = 'flask-app:latest' }
+  stages {
+    stage('Checkout') { steps { checkout scm } }
+    stage('Test') {
+      steps { sh 'pip install -r requirements.txt && pytest' }
+    }
+    stage('Build Image') { steps { sh 'docker build -t $IMAGE .' } }
+    stage('Run Container') {
+      steps {
+        sh 'docker rm -f flask-app || true'
+        sh 'docker run -d --name flask-app -p 5000:5000 $IMAGE'
+      }
+    }
+  }
+  post {
+    success { echo 'Pipeline succeeded' }
+    failure { echo 'Pipeline failed' }
+  }
+}
