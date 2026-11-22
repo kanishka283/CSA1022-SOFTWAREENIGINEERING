@@ -1,0 +1,11 @@
+ID,Requirement,Priority,Justification
+R1,Add / edit / delete books,Must,Core function
+R2,Member registration,Must,Needed to issue books
+R3,Issue and return books,Must,Core function
+R4,Search catalogue,Must,Basic usability
+R5,Fine calculation,Should,Important but can be manual initially
+R6,Email reminders,Should,Improves experience
+R7,Book reservation,Could,Nice to have
+R8,Barcode scanning,Could,Hardware dependent
+R9,Mobile app,Won't,Out of scope this release
+R10,AI book recommendations,Won't,Future release
