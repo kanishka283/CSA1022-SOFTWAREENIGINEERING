@@ -1,0 +1,7 @@
+Key,Type,Summary,Story Points,Sprint,Status
+SCRUM-1,Epic,User Management,,Sprint 1,To Do
+SCRUM-2,Story,As a user I can register,5,Sprint 1,Done
+SCRUM-3,Story,As a user I can log in,3,Sprint 1,In Progress
+SCRUM-4,Story,As an admin I can view users,5,Sprint 1,To Do
+SCRUM-5,Task,Set up CI,2,Sprint 1,To Do
+SCRUM-6,Story,As a user I can reset password,3,Backlog,To Do
