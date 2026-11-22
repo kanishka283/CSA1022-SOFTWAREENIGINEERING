@@ -1,0 +1,17 @@
+@startuml
+left to right direction
+actor "Security Guard" as SG
+actor Admin
+actor Student
+actor Visitor
+rectangle "College Security Management System" {
+  Student --> (Entry/Exit Logging)
+  Visitor --> (Register Visit)
+  SG --> (Verify ID Card)
+  SG --> (Approve Visitor)
+  SG --> (Report Incident)
+  Admin --> (Manage Access Rights)
+  Admin --> (View Reports)
+  (Register Visit) ..> (Approve Visitor) : <<include>>
+}
+@enduml

@@ -1,0 +1,18 @@
+@startuml
+start
+:Person arrives at gate;
+if (Student/Staff?) then (yes)
+  :Scan ID card;
+else (visitor)
+  :Register details;
+  :Guard approves / rejects;
+endif
+if (Access valid?) then (yes)
+  :Log entry;
+  :Allow entry;
+else (no)
+  :Deny entry;
+  :Report incident;
+endif
+stop
+@enduml

@@ -1,0 +1,15 @@
+@startuml
+class Person { +id; +name; +contact }
+class Student { +rollNo; +department }
+class Visitor { +purpose; +hostName }
+class SecurityGuard { +guardId; +shift; +verifyId() }
+class Admin { +adminId; +manageAccess() }
+class AccessLog { +logId; +time; +gate; +type }
+class Incident { +incidentId; +description; +severity }
+Person <|-- Student
+Person <|-- Visitor
+Person <|-- SecurityGuard
+Person <|-- Admin
+Person "1" -- "*" AccessLog
+SecurityGuard "1" -- "*" Incident : reports
+@enduml
