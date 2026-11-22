@@ -1,0 +1,7 @@
+Key,Requirement,MoSCoW,Kano
+TM-1,Create tasks,Must,Basic
+TM-2,Assign tasks,Must,Basic
+TM-3,Due-date reminders,Should,Performance
+TM-4,Kanban view,Should,Performance
+TM-5,Gantt chart,Could,Delighter
+TM-6,AI task suggestions,Won't,Delighter
